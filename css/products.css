@@ -1,0 +1,103 @@
+/* Seção de produtos */
+.products {
+  max-width: 1200px;
+  margin: 80px auto 100px;
+  padding: 40px;
+  background: rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.products h2 {
+  font-family: var(--font-primary);
+  font-size: 2.5rem;
+  color: #00ff88;
+  text-shadow: 0 0 15px rgba(0, 255, 136, 0.7);
+  margin-bottom: 30px;
+}
+
+/* Container dos produtos */
+.product-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Produtos */
+.product {
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid #00ff88;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1 1 calc(25% - 20px);
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.3);
+}
+
+.product:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 25px rgba(0, 255, 136, 0.8);
+}
+
+.product img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.product h3 {
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  color: #00ff88;
+  margin-bottom: 10px;
+}
+
+.product p {
+  font-family: var(--font-secondary);
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-bottom: 15px;
+}
+
+.product .price {
+  display: block;
+  font-family: var(--font-secondary);
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #00ff88;
+  margin-bottom: 15px;
+}
+
+/* Botão de compra */
+.btn-buy {
+  display: inline-block;
+  padding: 15px 30px;
+  background: #00ff88;
+  color: #111;
+  font-family: var(--font-primary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+}
+
+.btn-buy:hover {
+  background: #fff;
+  color: #00ff88;
+  box-shadow: 0 0 15px rgba(0, 255, 136, 0.8);
+}
+
+/* Rodapé */
+.footer {
+  font-family: var(--font-primary);
+  text-align: center;
+  padding: 20px;
+  background: #00ff88;
+  color: #111;
+  font-weight: bold;
+}
